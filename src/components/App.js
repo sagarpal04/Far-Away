@@ -10,7 +10,7 @@ const App = () => {
     { id: 2, description: "Socks", quantity: 12, packed: true },
   ]);
   return (
-    <>
+    <div className="app">
       <Logo />
       <Form setInitialItems={setInitialItems} />
       <PackingList
@@ -18,7 +18,7 @@ const App = () => {
         setInitialItems={setInitialItems}
       />
       <Stats initialItems={initialItems} />
-    </>
+    </div>
   );
 };
 
